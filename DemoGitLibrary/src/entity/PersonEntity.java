@@ -21,31 +21,31 @@ public class PersonEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long personId;
 
-    public Long getId() {
-        return id;
+    public Long getPersonId() {
+        return personId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setPersonId(Long personId) {
+        this.personId = personId;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (personId != null ? personId.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
+        // TODO: Warning - this method won't work in the case the personId fields are not set
         if (!(object instanceof PersonEntity)) {
             return false;
         }
         PersonEntity other = (PersonEntity) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.personId == null && other.personId != null) || (this.personId != null && !this.personId.equals(other.personId))) {
             return false;
         }
         return true;
@@ -53,7 +53,7 @@ public class PersonEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.PersonEntity[ id=" + id + " ]";
+        return "entity.PersonEntity[ id=" + personId + " ]";
     }
     
 }
