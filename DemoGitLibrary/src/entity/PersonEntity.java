@@ -22,6 +22,7 @@ public class PersonEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long personId;
+    private String name;
 
     public Long getPersonId() {
         return personId;
