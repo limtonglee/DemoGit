@@ -22,7 +22,7 @@ public class PersonEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long personId;
-    private String firstName;
+    private String fakeName;
 
     public Long getPersonId() {
         return personId;
